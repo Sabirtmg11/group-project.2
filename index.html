@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Sonam Loshar Party Invitation</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">Invitation</a></li>
+      <li><a href="Food Item.html">Food Item</a></li>
+      <li><a href="venue.html">Venue</a></li>
+      <li><a href="live music.html">Live Music</a></li>
+      <li><a href="dance party.html">Dance Party</a></li>
+    </ul>
+  </nav>
+
+  <div class="invitation-container" id="invitation">
+    <h1>Sonam Loshar Party Invitation</h1>
+    <p>You're invited to a Sonam Loshar Party Invitation</p>
+    <p>Date: <span id="eventDate">[2023-12-24]</span></p>
+    <p>Time: <span id="eventTime">[11AM]</span></p>
+    <p>Location: <span id="eventLocation">[Bouddha-Nepal]</span></p>
+    <button id="rsvpButton" onclick="toggleRSVP()">RESPONSE</button>
+  </div>
+
+  <div id="responseForm" style="display: none;">
+    <h2>Select Your Favorite Thing</h2>
+    <form id="favoriteForm">
+      <label for="favorite">Select:</label>
+      <select id="favorite" name="favorite">
+        <option value="dancing">Dancing</option>
+        <option value="singing">Singing</option>
+        <option value="buddhism">Briefing about Buddhism</option>
+        <option value="vegetarian">Vegetarian Food</option>
+      </select>
+      <label for="time">Select Time:</label>
+      <input type="time" id="time" name="time" required>
+      <button type="button" onclick="submitForm()">Submit</button>
+    </form>
+    <p id="confirmationMessage" style="display: none;"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
